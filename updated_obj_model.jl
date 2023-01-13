@@ -21,7 +21,7 @@ global msrs = Array{Float64}(undef, 2, 0)
 global zeta_time = Array{Float64}(undef, 9, 0)
 for state in states
     # Getting data and defining parameters
-    param = DataFrame(CSV.File("state_params.csv"))
+    param = DataFrame(CSV.File("state_params.csv")) # resulting params from indiv_state_train_updated.jl
     model_data = DataFrame(CSV.File("opt_model_data/pr_svi_" * state * ".csv"))
     budget = DataFrame(CSV.File("state_samhsa_grant.csv"))
     len = nrow(model_data)
