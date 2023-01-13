@@ -14,8 +14,8 @@ for unknown parameters in the model. We then integrate this epidemiological mode
 for treatment facility location and resource allocation. We seek to minimize opioid overdose deaths and the number of people with OUD. 
 Our MIPs also target socioeconomic equitability by considering social vulnerability (from the CDC’s Social Vulnerability Index) and opioid prescribing rates 
 in each county. By fitting our epidemiological models using neural ODEs, we obtain interpretable parameters which quantify the differences between the opioid epidemic dynamics of different states.
-Overall, our approach's proposed solutions on average decrease the number of people with OUD by $5.70\pm0.738\%$, increase the number of people in treatment by $21.17\pm3.162\%$, and decrease the 
-number of opioid-related deaths by $0.51\pm0.086\%$ after 2 years compared to the epidemiological model's predictions. Rather than only evaluating the 
+Overall, our approach's proposed solutions on average decrease the number of people with OUD by $5.70\pm0.738%$, increase the number of people in treatment by $21.17\pm3.162%$, and decrease the 
+number of opioid-related deaths by $0.51\pm0.086%$ after 2 years compared to the epidemiological model's predictions. Rather than only evaluating the 
 effectiveness of potential policies as in past literature, our approach is decision-focused and directly yields actionable insights for policy-makers. 
 It provides concrete opioid treatment facility and budget allocations and quantifies the impact of these allocations on pertinent population health measures. 
 Future iterations of this approach could be implemented as a decision-making tool to tackle the issue of opioid treatment inaccessibility.
