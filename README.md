@@ -3,19 +3,5 @@ This repository is by [Joyce Luo](https://joyceluo.netlify.app/) and [Bartolomeo
 
 If you find this repository helpful in your publications, please consider citing our paper. 
 
-## Introduction 
-The opioid epidemic is a crisis that has plagued the United States (US) for decades. One central issue of the epidemic is inequitable 
-access to treatment for opioid use disorder (OUD), which puts certain populations at a higher risk of opioid overdose. 
-We formulate an approach that integrates a predictive, dynamical model and a prescriptive optimization problem to find 
-the optimal locations of opioid treatment facilities and the optimal treatment budget distribution in each US state. 
-Our predictive model is a differential equation-based epidemiological model that captures the dynamics of the changing opioid epidemic. 
-We use neural ordinary differential equations to fit this model to opioid epidemic data for each state and obtain estimates 
-for unknown parameters in the model. We then integrate this epidemiological model for each state into a corresponding mixed-integer optimization problem (MIP)
-for treatment facility location and resource allocation. We seek to minimize opioid overdose deaths and the number of people with OUD. 
-Our MIPs also target socioeconomic equitability by considering social vulnerability (from the CDC’s Social Vulnerability Index) and opioid prescribing rates 
-in each county. By fitting our epidemiological models using neural ODEs, we obtain interpretable parameters which quantify the differences between the opioid epidemic dynamics of different states.
-Overall, our approach's proposed solutions on average decrease the number of people with OUD by $5.70\pm0.738$\%, increase the number of people in treatment by $21.17\pm3.162$\%, and decrease the 
-number of opioid-related deaths by $0.51\pm0.086$\% after 2 years compared to the epidemiological model's predictions. Rather than only evaluating the 
-effectiveness of potential policies as in past literature, our approach is decision-focused and directly yields actionable insights for policy-makers. 
-It provides concrete opioid treatment facility and budget allocations and quantifies the impact of these allocations on pertinent population health measures. 
-Future iterations of this approach could be implemented as a decision-making tool to tackle the issue of opioid treatment inaccessibility.
+## Abstract
+The opioid epidemic is a crisis that has plagued the United States (US) for decades. One central issue of the epidemic is inequitable access to treatment for opioid use disorder (OUD), which puts certain populations at a higher risk of opioid overdose. We integrate a predictive dynamical model and a prescriptive optimization problem to compute high-quality opioid treatment facility and treatment budget allocations for each US state. Our predictive model is a differential equation-based epidemiological model that captures the dynamics of the opioid epidemic. We use neural ordinary differential equations to fit this model to opioid epidemic data for each state and obtain estimates for unknown parameters in the model. We then incorporate this epidemiological model into a corresponding mixed-integer optimization problem (MIP) that aims to minimize the number of opioid overdose deaths and the number of people with OUD. We develop strong relaxations based on McCormick envelopes to efficiently compute approximate solutions to our MIPs that have less than 1% optimality gaps. Our method provides socioeconomically equitable solutions, as it incentivizes investments in areas with higher social vulnerability (from the US Centers for Disease Control's Social Vulnerability Index) and opioid prescribing rates. On average, our approach decreases the number of people with OUD by 6.08 $\pm$ 0.863%, increases the number of people in treatment by 22.57 $\pm$ 3.633%, and decreases the number of opioid-related deaths by 0.55 $\pm$ 0.105% after 2 years compared to the baseline epidemiological model's predictions. We identify that treatment facilities should be moved or added to counties that have significantly less facilities than their population share and higher social vulnerability. Future iterations of our approach could be implemented as a decision-making tool to tackle opioid treatment inaccessibility.
