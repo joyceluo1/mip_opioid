@@ -1,5 +1,5 @@
 # Equitable Data-Driven Facility Location and Resource Allocation to Fight the Opioid Epidemic
-This repository is by [Joyce Luo](https://joyceluo.netlify.app/) and [Bartolomeo Stellato](https://stellato.io/), and contains the Julia code used in our paper "Equitable Data-Driven Resource Allocation to Fight the Opioid Epidemic: A Mixed-Integer Optimization Approach."
+This repository is by [Joyce Luo](https://joyceluo.netlify.app/) and [Bartolomeo Stellato](https://stellato.io/), and contains the Julia code used in our paper "Equitable Data-Driven Facility Location and Resource Allocation to Fight the Opioid Epidemic."
 
 If you find this repository helpful in your publications, please consider citing our [paper](https://arxiv.org/abs/2301.06179). 
 
