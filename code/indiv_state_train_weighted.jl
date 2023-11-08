@@ -7,7 +7,7 @@ https://github.com/SciML/DiffEqFlux.jl#optimizing-parameters-of-an-ode-for-an-op
 https://julialang.org/blog/2019/01/fluxdiffeq/
 https://docs.sciml.ai/DiffEqFlux/stable/examples/neural_ode/
 
-Fits model parameters using neural ODEs for a set of US states.
+Fits model parameters using neural ODE-inspired model fitting process for a set of US states.
 
 =#
 
